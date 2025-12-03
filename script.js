@@ -78,7 +78,7 @@ const overallData = buildOverallData();
 // ΔSuhu rata-rata per hari (discale biar orde-nya ~0.02 kayak di Power BI)
 const deltaTempByDay = {
   labels: [1, 2, 3, 4, 5, 6, 7],
-  values: [0, 0.02, 0.02, 0.02, 0.01, -0.01, -0.01]
+  values: [0.027, 0.013, 0.017, 0.015, -0.015, -0.014, -0.015]
 };
 
 // Nutrient maksimum per hari + overview (dari sheet Kimia & Sensoris)
@@ -108,10 +108,17 @@ const qualityTempData = {
   temps: [29.2, 34.6, 44.0, 39.1, 47.7, 46.5, 44.5, 41.8]
 };
 
-// Skor kualitas rata-rata per hari (2–6) untuk donut chart
+// Skor kualitas rata-rata per hari (1-7) untuk donut chart
 const qualityByDay = {
-  labels: ['Hari 2', 'Hari 3', 'Hari 4', 'Hari 5', 'Hari 6'],
-  values: [3.50, 3.94, 4.15, 4.04, 3.80]
+  labels: [
+  'Mulai Melonjak',
+  'Lonjakan suhu – Hati-hati',
+  'Kualitas Puncak',
+  'Stabil',
+  'Sedikit Menurun',
+  'Mulai Over Fermentasi'
+],
+values: [9.52, 4.76, 14.29, 19.05, 23.81, 28.5]
 };
 
 /* -----------------------------
