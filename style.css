@@ -673,3 +673,14 @@ footer {
     padding-inline: 16px;
   }
 }
+
+.page-wrapper {
+  max-width: 1200px;
+  margin: 72px auto 48px;
+  padding: 24px;
+}
+
+body {
+  margin: 0;
+}
+
