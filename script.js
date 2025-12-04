@@ -108,17 +108,10 @@ const qualityTempData = {
   temps: [29.2, 34.6, 44.0, 39.1, 47.7, 46.5, 44.5, 41.8]
 };
 
-// Skor kualitas rata-rata per hari (1-7) untuk donut chart
+// Skor kualitas rata-rata per hari (1–7) untuk donut chart
 const qualityByDay = {
-  labels: [
-  'Mulai Melonjak',
-  'Lonjakan suhu – Hati-hati',
-  'Kualitas Puncak',
-  'Stabil',
-  'Sedikit Menurun',
-  'Mulai Over Fermentasi'
-],
-values: [9.52, 4.76, 14.29, 19.05, 23.81, 28.5]
+  labels: ['Mulai Melonjak',  'Lonjakan suhu – Hati-hati', 'Kualitas Pucak', 'Stabil', 'Sedikit Menurun', 'Mulai Over Fermentasi'],
+  values: [9.52, 4.76, 14.29, 19.05, 23.81, 28.5]
 };
 
 /* -----------------------------
@@ -582,3 +575,54 @@ document.getElementById('nutrient-card').addEventListener('click', () => showExp
 document.getElementById('card-quality-temp').addEventListener('click', () => showExplanation('qualityTemp'));
 document.getElementById('card-quality-day').addEventListener('click', () => showExplanation('qualityDay'));
 document.getElementById('card-ph').addEventListener('click', () => showExplanation('phChart'));
+
+// Data fun fact kakao (2 fun fact)
+const funfacts = [
+  {
+    title: "Fermentasi mengubah biji pahit jadi calon cokelat enak",
+    description:
+      "Sebelum difermentasi, biji kakao rasanya sangat pahit dan sepat. Selama fermentasi, mikroba membentuk prekursor aroma dan rasa cokelat sehingga biji siap diproses menjadi cokelat berkualitas.",
+    image: "assets/img/funfact1.png"
+  },
+  {
+    title: "Aroma khas cokelat mulai terbentuk di dalam kotak fermentasi",
+    description:
+      "Saat suhu massa kakao naik dan pulp mulai terurai, senyawa volatil pembentuk aroma muncul. Di fase inilah mulai tercium wangi khas cokelat yang nanti akan semakin kuat setelah penyangraian.",
+    image: "assets/img/funfact2.png"
+  }
+];
+
+let currentFunfactIndex = 0;
+
+// Elemen DOM
+const funfactImage = document.getElementById("funfact-image");
+const funfactTitle = document.getElementById("funfact-title");
+const funfactDescription = document.getElementById("funfact-description");
+const funfactIndicator = document.getElementById("funfact-indicator");
+const btnPrev = document.getElementById("funfact-prev");
+const btnNext = document.getElementById("funfact-next");
+
+// Fungsi untuk menampilkan fun fact sesuai index
+function renderFunfact(index) {
+  const fact = funfacts[index];
+  funfactImage.src = fact.image;
+  funfactImage.alt = fact.title;
+  funfactTitle.textContent = fact.title;
+  funfactDescription.textContent = fact.description;
+  funfactIndicator.textContent = `${index + 1} / ${funfacts.length}`;
+}
+
+// Event tombol
+btnNext.addEventListener("click", () => {
+  currentFunfactIndex = (currentFunfactIndex + 1) % funfacts.length;
+  renderFunfact(currentFunfactIndex);
+});
+
+btnPrev.addEventListener("click", () => {
+  currentFunfactIndex =
+    (currentFunfactIndex - 1 + funfacts.length) % funfacts.length;
+  renderFunfact(currentFunfactIndex);
+});
+
+// Inisialisasi pertama kali
+renderFunfact(currentFunfactIndex);
