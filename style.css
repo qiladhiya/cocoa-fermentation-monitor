@@ -626,9 +626,14 @@ canvas {
 }
 
 .profile-intro {
-  max-width: 680px;
+  max-width: 100%;
+  width: 100%;
   margin-top: 6px;
   margin-bottom: 18px;
+}
+
+.profile-intro {
+  text-align: justify;
 }
 
 .profile-grid {

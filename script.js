@@ -110,7 +110,7 @@ const qualityTempData = {
 
 // Skor kualitas rata-rata per hari (1–7) untuk donut chart
 const qualityByDay = {
-  labels: ['Mulai Melonjak',  'Lonjakan suhu – Hati-hati', 'Kualitas Pucak', 'Stabil', 'Sedikit Menurun', 'Mulai Over Fermentasi'],
+  labels: ['Day 1: Mulai Melonjak',  'Day 2: Lonjakan suhu – Hati-hati', 'Day 3: Kualitas Pucak', 'Day 4: Stabil', 'Day 5: Sedikit Menurun', 'Day 6: Mulai Over Fermentasi'],
   values: [9.52, 4.76, 14.29, 19.05, 23.81, 28.5]
 };
 

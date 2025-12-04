@@ -80,7 +80,7 @@
           <div class="funfact-body">
             <div class="funfact-image">
               <img id="funfact-image"
-                   src="assets/img/funfact1.png"
+                   src="funfact1.png"
                    alt="Fun fact kakao">
             </div>
 
@@ -131,15 +131,15 @@
       <div class="section-wrapper section-dashboard">
         <h1 class="page-title">Cacao Fermentation Monitor Throughout Day</h1>
         <p class="page-subtitle">
-          Gunakan <strong>slice kualitas fermentasi</strong> dan <strong>slider hari fermentasi</strong> untuk
-          mengeksplorasi bagaimana suhu, pH, kualitas, dan nutrisi kakao berubah sepanjang proses fermentasi.
+          Gunakan <strong>fitur "kualitas fermentasi" </strong> dan <strong>slider "hari fermentasi"</strong> berikut untuk
+          mengeksplorasi bagaimana suhu, pH, kualitas, dan nutrisi kakao berubah sepanjang proses fermentasi ^^*.
         </p>
 
         <div class="dashboard-wrapper">
           <!-- SLICERS -->
           <div class="slicer-row">
             <div class="slice-group">
-              <div class="slice-label">Slice Kualitas Fermentasi</div>
+              <div class="slice-label">Kualitas Fermentasi (Click me!)</div>
               <div class="quality-pills">
                 <button class="quality-pill active" data-quality="Awal fermentasi"><span>Awal fermentasi</span></button>
                 <button class="quality-pill" data-quality="Fermentasi aktif"><span>Fermentasi aktif</span></button>
@@ -155,7 +155,7 @@
             </div>
 
             <div class="slice-group">
-              <div class="slice-label">Slice Linear Hari Fermentasi (0 = Overview)</div>
+              <div class="slice-label">Hari Fermentasi (Drag me) (0 = Overview)</div>
               <div class="day-slider-wrapper">
                 <input type="range" id="daySlider" min="0" max="7" value="0" />
                 <div class="day-badge" id="dayBadgeText">Overview</div>
@@ -179,7 +179,7 @@
               <div class="card-header">
                 <div>
                   <div class="card-title">Perubahan Suhu per Hari</div>
-                  <div class="card-subtitle">Delta suhu rata-rata tiap hari fermentasi</div>
+                  <div class="card-subtitle">Perubahan suhu rata-rata tiap hari fermentasi</div>
                 </div>
               </div>
               <canvas id="deltaDayChart"></canvas>
@@ -207,8 +207,8 @@
                 </div>
               </div>
               <p class="nutrient-note">
-                Angka akan menyesuaikan dengan hari fermentasi yang dipilih pada slider. Posisi 0 menampilkan nilai
-                maksimal keseluruhan (overview).
+                Nutrient dari kakao juga berubah sepanjang masa fermentasi, lho!
+                Mengetahui ini dapat mempermudah industri menentukan hari fermentasi yang sesuai :p
               </p>
             </div>
           </div>
@@ -278,7 +278,7 @@
 
         <div class="section">
           <h4 class="section-kicker">Saran</h4>
-          <h2>Rekomendasi praktis berdasarkan hasil analisis</h2>
+          <h2>Rekomendasi praktis berdasarkan hasil analisis kami!</h2>
           <ul>
             <li><strong>Waktu panen fermentasi:</strong> fermentasi disarankan dihentikan sekitar hari ke-3 atau ke-4.</li>
             <li><strong>Monitoring rutin:</strong> ukur suhu massa kakao dan pH secara berkala dalam rentang ideal.</li>
@@ -292,11 +292,13 @@
     <!-- PROFILE PAGE BARU -->
     <section id="profile" class="page">
       <div class="section-wrapper section-profile">
-        <h4 class="section-kicker">Our Team</h4>
+        <h4 class="section-kicker">Honorable Mention Our Powerpuff GirlS</h4>
         <h2>Kelompok 14 • TIK Fermentasi Kakao</h2>
         <p class="profile-intro">
-          Tiga orang di balik visualisasi fermentasi ini: riset data, storytelling, dan desain dashboard yang (semoga)
-          bikin asisten praktikum senang.
+          Tiga manusia dari kelompok 14 ini yang mengulik data, dummy, copy writing, desain dashboard, mikirin konsep, etc... 
+          so that this blood, sweat, and tears website can (hopefully) get us a really high grade. 
+          Semua kami kerjakan secara bersama-sama hingga website ini bisa kelihatan profesional dan interaktif.
+          Apapun itu, kami berharap website ini dapat memberikan banyak manfaat bagi siapapun itu yang melihatnya. 
         </p>
 
         <div class="profile-grid">
@@ -304,40 +306,30 @@
           <article class="profile-card">
             <div class="profile-photo">
               <!-- GANTI src DENGAN FOTO ASLI -->
-              <img src="img/diyas.jpg" alt="Nama Lengkap 1">
+              <img src="img/diyas.jpg" alt="Fathimah Aqila Dhiya">
             </div>
-            <h3 class="profile-name">Nama Lengkap 1</h3>
-            <p class="profile-role">Role di proyek (mis. Data & Insight Lead)</p>
-            <a href="https://instagram.com/username1" target="_blank" class="profile-ig">@username1</a>
-            <p class="profile-desc">
-              Fokus pada analisis data fermentasi, interpretasi grafik, dan penyusunan insight untuk laporan.
-            </p>
+            <h3 class="profile-name">Fathimah Aqila Dhiya</h3>
+            <a href="https://instagram.com/qiladhiya" target="_blank" class="profile-ig">@qiladhiya</a>
+
           </article>
 
           <!-- CARD 2 -->
           <article class="profile-card">
             <div class="profile-photo">
-              <img src="img/naura.jpg" alt="Nama Lengkap 2">
+              <img src="img/naura.jpg" alt="Nauraifa Elita Putriwahdani">
             </div>
-            <h3 class="profile-name">Nama Lengkap 2</h3>
-            <p class="profile-role">Role di proyek (mis. UI & Storytelling)</p>
-            <a href="https://instagram.com/username2" target="_blank" class="profile-ig">@username2</a>
-            <p class="profile-desc">
-              Mengurusi alur cerita visual, pemilihan warna, dan copy yang menghubungkan data dengan user.
-            </p>
+            <h3 class="profile-name">Nauraifa Elita Putriwahdani</h3>
+            <a href="https://instagram.com/nnauraifa" target="_blank" class="profile-ig">@nnauraifa</a>
           </article>
 
           <!-- CARD 3 -->
           <article class="profile-card">
             <div class="profile-photo">
-              <img src="img/rahma.jpg" alt="Nama Lengkap 3">
+              <img src="img/rahma.jpg" alt="Rahma Kemala Shefirandita">
             </div>
-            <h3 class="profile-name">Nama Lengkap 3</h3>
-            <p class="profile-role">Role di proyek (mis. Power BI & Integrasi)</p>
-            <a href="https://instagram.com/username3" target="_blank" class="profile-ig">@username3</a>
-            <p class="profile-desc">
-              Bertanggung jawab pada perancangan dashboard Power BI dan integrasinya ke dalam website.
-            </p>
+            <h3 class="profile-name">Rahma Kemala Shefirandita</h3>
+            <a href="https://instagram.com/rahmaak.s" target="_blank" class="profile-ig">@rahmaak.s</a>
+            
           </article>
         </div>
       </div>
